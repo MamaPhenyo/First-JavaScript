@@ -3,8 +3,22 @@
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <h1 onclick="innerHTML='is nice'">JavaScript</h1>
+        <h1 id="heading" onclick="changeText()">JavaScript</h1>
+        <p id="addition"></p>
+
         <script>
+            addNumbers(51, 7);
+            function changeText(){
+                if(document.getElementById("heading").innerHTML=='JavaScript'){
+                    document.getElementById("heading").innerHTML='is nice'
+                } else {
+                    document.getElementById("heading").innerHTML='JavaScript'
+                }
+            }
+
+            function addNumbers(num1, num2){
+                document.getElementById("addition").innerHTML = num1 + num2;
+            }
         
         </script>
     </body>
