@@ -7,7 +7,7 @@
         <p id="addition"></p>
 
         <script>
-            addNumbers(51, 7);
+            document.getElementById("addition").innerHTML = addNumbers(51, 7);
             function changeText(){
                 if(document.getElementById("heading").innerHTML=='JavaScript'){
                     document.getElementById("heading").innerHTML='is nice'
@@ -17,7 +17,7 @@
             }
 
             function addNumbers(num1, num2){
-                document.getElementById("addition").innerHTML = num1 + num2;
+                return num1 + num2;
             }
         
         </script>
